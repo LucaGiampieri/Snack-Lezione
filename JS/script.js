@@ -25,4 +25,4 @@ else{
 
 
 //stampiamo il numero maggiore
-console.log('Il numero maggiore è', numHiger);
+console.log('Numero maggiore:', numHiger);
