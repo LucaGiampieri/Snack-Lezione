@@ -41,6 +41,7 @@ const numUser5 = parseInt(prompt("Inserisci il quinto numero"));
 let numSomma = numUser1 + numUser2 + numUser3 + numUser4 + numUser5
 console.log(numSomma)*/
 
+/* versione non corettissima
 const numsUser = [
   parseInt(prompt("Inserisci il primo numero"), 10),
   parseInt(prompt("Inserisci il secondo numero"), 10),
@@ -55,4 +56,28 @@ for ( let i = 0; i < numsUser.length; i++){
     Somma += numsUser[i];  
 }
 
-console.log(Somma)
+console.log(Somma)*/
+
+//versione con ciclo for
+
+let somma = 0;
+
+for ( let i=0; i < 5; i++){
+    const numUser = parseInt(prompt('inserisci un numero'));
+    somma += numUser; //somma = somma + numUser; 
+}
+
+console.log(somma)
+
+//versione con while
+
+let counter = 0;
+let sommaWhile = 0;
+while (counter < 5){
+    const nuovoNumero = parseInt(prompt('inserisci un numero'));
+    sommaWhile += nuovoNumero;
+    counter++;
+}
+
+console.log(sommaWhile);
+
